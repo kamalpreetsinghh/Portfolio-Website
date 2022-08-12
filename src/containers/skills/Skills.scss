@@ -1,0 +1,117 @@
+.app__skills {
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.app__skills-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  width: 50%;
+  padding: 2rem;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+}
+
+.app__skill-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 1rem;
+
+  @media screen and (max-width: 600px) {
+    margin: 0.6rem;
+  }
+}
+
+.app__skill-icon {
+  width: fit-content;
+  padding: 1rem;
+  background-color: var(--background-color);
+
+  svg {
+    font-size: 4rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 0.75rem;
+  }
+}
+
+.app__skill-name {
+  font-size: 1rem;
+  font-weight: 500;
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.7rem;
+  }
+}
+
+.app__roadmap-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+  width: 50%;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+}
+
+.app__experience {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+
+  @media screen and (max-width: 600px) {
+    padding: 0.75rem;
+  }
+}
+
+.app__experience-year {
+  color: var(--secondary-color);
+  font-size: x-large;
+  font-weight: 600;
+  margin-right: 1.5rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: larger;
+  }
+}
+
+.app__experience-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__experience-title {
+  font-size: x-large;
+  font-weight: 600;
+
+  @media screen and (max-width: 600px) {
+    font-size: larger;
+  }
+}
+
+.app__experience-place {
+  color: #878787;
+  font-size: large;
+  font-weight: 600;
+}
